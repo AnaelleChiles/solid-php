@@ -1,16 +1,10 @@
 <?php
+require_once 'MusicType.php';
 
-class Mp3
+class Mp3 extends MusicType
 {
-    private $filename;
-
-    public function __construct($filename)
+    public function listen($filename)
     {
-        $this->filename = $filename;
-    }
-
-    public function listen()
-    {
-        return 'Lecture du fichier Mp3 '. $this->filename;
+        return 'Lecture du fichier Mp3 '. $filename;
     }
 }

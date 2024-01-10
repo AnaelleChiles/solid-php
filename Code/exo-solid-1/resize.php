@@ -6,7 +6,7 @@ class resize
     private $fileInformation;
     public function __construct($file)
     {
-        $fileInformation = new FileInformation($file);
+        $this->fileInformation = new FileInformation($file);
     }
     public function resize($origin, $destination, $width, $maxHeight)
     {
